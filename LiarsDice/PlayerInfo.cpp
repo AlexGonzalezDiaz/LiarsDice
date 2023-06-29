@@ -7,6 +7,7 @@ Player player;
 string m_name;
 int playerPosition = 1;
 
+// Function to generate a vector of player names based on the number of players
 vector<string> Player::generateVectorNames(int& numPlayers)
 {
 	vector<string> vectorNames;
@@ -21,7 +22,7 @@ vector<string> Player::generateVectorNames(int& numPlayers)
 	playerPosition = 1;
 	return vectorNames;
 }
-
+// Function to print the player names
 void Player::print(int numPlayers, vector<string>& playerVector)
 {
 	for (int i = 0; i < numPlayers; i++)
@@ -31,12 +32,13 @@ void Player::print(int numPlayers, vector<string>& playerVector)
 	}
 	playerPosition = 1;
 }
-
+// Function to get player input from the user
 void Player::GetPlayerInput(string& playerInput) 
 {
 	cin >> playerInput;
 }
 
+// Function to display player options
 void Player::playerOptions(string player) {
 	cout << player << " choose your move" << endl;
 	cout << "1: Look at your Dice" << endl;

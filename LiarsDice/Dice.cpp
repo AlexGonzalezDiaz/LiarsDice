@@ -15,12 +15,14 @@
 */
 using namespace std;
 
+// Function to simulate rolling a six-sided die and returning the result
 int dice()
 {
 		return rand() % 6 + 1;
 }
 
-vector<vector<int>> generateVectorBois(int numPlayers, vector<int>(m))
+// Function to generate a vector of dice rolls for each player
+vector<vector<int>> generateVectorDice(int numPlayers, vector<int>(m))
 {
 		srand((unsigned int)time(NULL));
 		vector<vector<int> > diceRolls(numPlayers, vector<int>(m));
@@ -36,6 +38,7 @@ vector<vector<int>> generateVectorBois(int numPlayers, vector<int>(m))
 		return v;
 }
 
+// Function to print the dice hands of all players
 void printDiceHands(int numPlayers, vector<vector<int>>& Hands)
 {
 	for (int i = 0; i < numPlayers; i++)
@@ -48,6 +51,7 @@ void printDiceHands(int numPlayers, vector<vector<int>>& Hands)
 		}
 	}
 
+// Function to print the dice hand of a specific player
 void printSpecificHand(int num, vector<vector<int>>& Hands)
 {
 	int input = num;
@@ -58,11 +62,11 @@ void printSpecificHand(int num, vector<vector<int>>& Hands)
 	}
 	cout << "\n";
 } 
-
+// Function to check for a winner based on the guess and type of dice
 string checkForWinner(int numPlayers, int guessNum , int typeDice, vector<vector<int>>& Hands)
 {
 	map<int, int> m;
-
+	// Counting the occurrences of each dice value in all players' hands
 	for (int i = 0; i < numPlayers; i++)
 	{
 		for (int j = 0; j < 5; j++)
@@ -71,7 +75,7 @@ string checkForWinner(int numPlayers, int guessNum , int typeDice, vector<vector
 		}
 		cout << endl;
 	}
-
+	// Checking if the guess matches the number of occurrences of the type of dice
 	for (auto it : m) {
 		if (it.first == typeDice) 
 		{
