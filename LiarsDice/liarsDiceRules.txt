@@ -1,0 +1,18 @@
+				              Liar's Dice Rules
+-The first player calls out two numbers: first, how many dice on the table he or she thinks have
+been rolled as a number between one and six. For example, player one could say “two fives,”
+which means he or she thinks there are at least two dice that are fives among all the players’
+dice (including his or her own).
+-At this point, all players can accept what has been called out and move on to player two
+or call player one out, which will end the round and result in a winner or loser for the
+round.
+-If player one calls out “two fives,” it does not matter whether player one has a five or not as
+bluffing is allowed in Liar’s Dice. It only matters if another player believes player one is bluffing
+and calls him or her out on it. In that instance, all dice must be revealed. If player one is correct,
+the player wins. If player one is wrong, then the player who called him/her out is the winner.
+The round is then over.
+-If player one’s call is accepted, then player two calls out a number. The first number must be
+greater than what player one called. For example, if player one called out “two fives,” player
+two must call out three or higher for his or her first number, so “three fives,” “three fours,” or
+four twos” would all be acceptable. “One five” or “two sixes” would be unacceptable.
+-Game play continues until someone is called out.
